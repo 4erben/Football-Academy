@@ -61,33 +61,33 @@ export default function SignWithUs() {
                 <Row className='my-2'>
                     <div className='p-2 form-border'>
                         <Form onSubmit={handleOnSubmit}>
-                            <Form.Group className='row my-2'>
-                                <Col lg={6} md={6}>
+                            <Form.Group className='row my-3'>
+                                <Col lg={6} md={6} className=''>
                                     <Form.Control  placeholder='الاسم كامل*' type='name' name='name' value={name} onChange={(e)=>{setName(e.target.value)}}  required/>
                                 </Col>
-                                <Col lg={6} md={6}>
+                                <Col lg={6} md={6} className=''>
                                     <Form.Control  placeholder='رقم الجوال*' type='number' name='phoneNo' value={phoneNo} onChange={(e)=>{setPhoneNo(e.target.value)}}  required/>
                                 </Col>
                             </Form.Group>
                             <Form.Group className='row my-3'>
-                                <Col lg={6} md={6}>
+                                <Col lg={6} md={6} className=''>
                                     <Form.Control  placeholder='العمر*' type='number' name='age' value={age} onChange={(e)=>{setAge(e.target.value)}}  required/>
                                 </Col>
-                                <Col lg={6} md={6}>
+                                <Col lg={6} md={6} className=''>
                                     <Form.Control  placeholder='مكان البلد*' type='text' name='country' value={country} onChange={(e)=>{setCountry(e.target.value)}}  required/>
                                 </Col>
                             </Form.Group>
                             <Form.Group className='row my-3'>
-                                <Col>
+                                <Col className=''>
                                     <Form.Control placeholder='عنوان البريد الاكتروني*' type='email' name='email' value={email} onChange={(e)=>{setEmail(e.target.value)}} required />
                                 </Col>
                             </Form.Group>
                             <Form.Group className='row my-3'>
-                                <Col>
+                                <Col className=''>
                                     <textarea className='form-control' placeholder='اكتب نبذة عن مهاراتك و تجاربك ...' rows="4"  type='text' name='textArea' value={textArea} onChange={(e)=>{setTextArea(e.target.value)}} required ></textarea>
                                 </Col>
                             </Form.Group>
-                            <Form.Group className='row my-2'>
+                            <Form.Group className='row '>
                                 <Col lg={12} className='row px-2'>
                                 <Button className='' type='submit'>
                                     ارسال

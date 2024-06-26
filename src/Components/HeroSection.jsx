@@ -12,8 +12,8 @@ export default function HeroSection() {
                   <h1>انضم الي اكاديمية الابطال حيث يصنع نجوم كرة القدة</h1>
                   <p>لدينا خيرة المدربين و المحضرين البدنيين اللذين يستطيعون اكتشاف المواهب و اللاعبين الجيدين في مجال كرة القدم</p>
                   <div className=''>
-                    <Button className='bg-c-red border-0 fw-bold mx-1 px-2'>سجل عضويتك</Button>
-                    <Button variant='white' className='bg-white text-danger fw-bold border-0 mx-1 px-2'>تواصل معنا</Button>
+                    <Button className='bg-c-red border-0 fw-bold mx-1 px-2 my-2'>سجل عضويتك</Button>
+                    <Button variant='white' className='bg-white text-danger fw-bold border-0 mx-1 px-2 my-2'>تواصل معنا</Button>
                   </div>
                 </Col>
               </Col>

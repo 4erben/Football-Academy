@@ -22,7 +22,7 @@ function App() {
       <TalentSection />
       <CoachesSection />
       <SignWithUs />
-     {/*  <Footer/> */}
+      <Footer/>
     </div>
     
   )

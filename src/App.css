@@ -37,6 +37,9 @@ body{
   margin: 0 !important;
 }
 /* Utility Classes */
+.bg-c-dark{
+  background-color: #151B37 !important;
+}
 .bg-c-red{
   background-color: #910A2D !important;
 }
@@ -54,32 +57,35 @@ body{
 }
 .nav-link{
   color: white !important;
-  padding: 5px 15px !important;
+  padding: 10px 15px !important;
 }
 .nav-link:hover{
   cursor: pointer;
   background-color: #910a2e59;
   border-radius: 20px;
 }
-
-/*  */
+.nav-logo{
+  font-family: Knewave;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37.3px;
+  text-align: left;
+  color: white !important;
+}
+.fa-cover{
+  background-color: rgba(192, 188, 188, 0.575);
+  margin: 0 10px;
+}
+.fa-cover:hover{
+  cursor: pointer;
+  background-color: rgba(192, 188, 188, 0.664);;
+}
+/* Header */
 .header-nav{
   background: linear-gradient(90deg, #283349 0%, #910A2D 100%);
-    .nav-logo{
-      font-family: Knewave;
-      font-size: 24px;
-      font-weight: 400;
-      line-height: 37.3px;
-      text-align: left;
+    .toggler{
+      background-color: #910A2D !important;
       color: white !important;
-    }
-    .fa-cover{
-      background-color: rgba(192, 188, 188, 0.575);
-      margin: 0 10px;
-    }
-    .fa-cover:hover{
-      cursor: pointer;
-      background-color: rgba(192, 188, 188, 0.664);;
     }
 }
 
@@ -133,7 +139,6 @@ body{
       z-index: 7;
     }
 }
-
 .news-section{
   .news{
     min-height: 284px;
@@ -186,7 +191,6 @@ body{
     background-size: cover; 
   }
 }
-
 .aboutus-section{
   min-height: 423px;
   .aboutus-images{
@@ -271,7 +275,6 @@ body{
     
   }
 }
-
 .talent-section{
   background: linear-gradient(120deg,transparent, transparent,transparent,transparent, #910a2e80 , #910a2ea8, transparent, transparent);
   overflow: hidden;
@@ -355,8 +358,6 @@ body{
   z-index: 1;
   transform: skewX(-30deg);
 }
-
-
 .signwithus-section{
   .sign-right{
     width: 100%;
@@ -397,6 +398,27 @@ body{
       background-color: #910A2D;
     }
   }
+
+}
+
+.footer-container{
+  background: linear-gradient(87.31deg, #DF193C -43.36%, #1A2242 68.65%);
+  min-height: 350px;
+    .input-icon-container{
+      position: relative;
+
+      .input-icon{
+        position: absolute;
+        right: 10px;
+        top: 0;
+        z-index: 2;
+        color: #151B37 !important;
+      }
+      .input-icon > svg {
+        color: #960808 !important;
+        font-size: larger;
+      }
+    }
 
 }
 

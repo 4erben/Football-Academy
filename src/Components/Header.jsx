@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container, Nav, Navbar } from 'react-bootstrap'
+import { Col, Container, Nav, Navbar, Row } from 'react-bootstrap'
 import { FaTwitter } from "react-icons/fa";
 import { PiInstagramLogo } from "react-icons/pi";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -8,28 +8,34 @@ import { FaFacebookF } from "react-icons/fa";
 
 export default function Header() {
   return (
-    <Navbar expand="lg" className="header-nav py-3">
-    <Container className=''>
-      <span  className='nav-logo px-2'>Logo</span>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <div className='text-white'>
-        <span className='fa-cover rounded rounded-circle p-2'><FaTwitter /></span>
-        <span className='fa-cover rounded rounded-circle p-2'><PiInstagramLogo /></span>
-        <span className='fa-cover rounded rounded-circle p-2'><FaLinkedinIn /></span>
-        <span className='fa-cover rounded rounded-circle p-2'><FaWhatsapp /></span>
-        <span className='fa-cover rounded rounded-circle p-2'><FaFacebookF /></span>
-      </div>
-      <Navbar.Collapse id="basic-navbar-nav" className='flex-grow-0'>
-
+    <Navbar expand="lg" className="header-nav ">
+    <Container className='text-nowrap' >
+        <Row className=' w-100 flex-row justify-content-between align-items-center'>
+            <Col xs={2} md={2} sm={2} lg={2}><span  className='nav-logo px-2'>Logo</span></Col>
+            <Col xs={12} md={8} sm={8} lg={8} className='text-white  mt-2  justify-content-around d-none d-sm-flex '>
+                <span className='fa-cover rounded rounded-circle p-2'><FaTwitter /></span>
+                <span className='fa-cover rounded rounded-circle p-2'><PiInstagramLogo /></span>
+                <span className='fa-cover rounded rounded-circle p-2'><FaLinkedinIn /></span>
+                <span className='fa-cover rounded rounded-circle p-2'><FaWhatsapp /></span>
+                <span className='fa-cover rounded rounded-circle p-2'><FaFacebookF /></span>
+            </Col>
+            <Col xs={2} md={2} sm={2} lg={2}><Navbar.Toggle aria-controls="basic-navbar-nav"  className='toggler'/></Col>
+      </Row>
+      <Navbar.Collapse id="basic-navbar-nav" className='flex-grow-0 my-3'>
         <Nav className=" justify-content-md-center align-items-md-center   ">
+            <div className='d-flex justify-content-around d-block d-sm-none mb-3'>
+                <span className='fa-cover rounded rounded-circle p-2'><FaTwitter /></span>
+                <span className='fa-cover rounded rounded-circle p-2'><PiInstagramLogo /></span>
+                <span className='fa-cover rounded rounded-circle p-2'><FaLinkedinIn /></span>
+                <span className='fa-cover rounded rounded-circle p-2'><FaWhatsapp /></span>
+                <span className='fa-cover rounded rounded-circle p-2'><FaFacebookF /></span>
+            </div>
           <span className='nav-link'>الاكاديمية</span>
           <span className='nav-link'>الاخبار</span>
           <span className='nav-link'>اللاعبين</span>
           <span className='nav-link'>تواصل معنا</span>
-          
         </Nav>
       </Navbar.Collapse>
-
     </Container>
   </Navbar>
   )
