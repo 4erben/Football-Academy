@@ -1,27 +1,26 @@
 import './App.css'
 import "bootstrap/dist/css/bootstrap.min.css";
-import AboutUs from './Components/AboutUs'
-import HeroSection from './Components/HeroSection';
-import Footer from './Components/Footer';
-import NewsSection from './Components/NewsSection';
-import LatestVids from './Components/LatestVids';
-import TalentSection from './Components/TalentSection';
-import SignWithUs from './Components/SignWithUs';
-import CoachesSection from './Components/CoachesSection';
 import Header from './Components/Header';
+import Footer from './Components/Footer';
+
+import { Container } from 'react-bootstrap';
+import HomePage from './Pages/HomePage';
+import { Route, Routes } from 'react-router-dom';
+import NewsPage from './Pages/NewsPage';
+
 
 function App() {
 
   return (
     <div className="App" dir='rtl'>
       <Header/>
-      <HeroSection />
-      <NewsSection />
-      <AboutUs />
-      <LatestVids />
-      <TalentSection />
-      <CoachesSection />
-      <SignWithUs />
+      <Container fluid className='px-0'>
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/news' element={<NewsPage />} />
+        </Routes>
+        
+      </Container>
       <Footer/>
     </div>
     

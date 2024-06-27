@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row , Col } from 'react-bootstrap';
-import footballer from "../assets/talent-section/2.png";
+
 export default function TalentSection() {
   return (
     <Container className='talent-section py-5'>

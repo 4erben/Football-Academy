@@ -1,6 +1,6 @@
 import React from 'react';
 import {Container ,Row , Col} from "react-bootstrap";
-import VideoComponent from './smallComponents/VideoComponent';
+import VideoComponent from '../smallComponents/VideoComponent';
 
 export default function LatestVids() {
   return (

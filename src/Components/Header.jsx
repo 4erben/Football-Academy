@@ -5,10 +5,11 @@ import { PiInstagramLogo } from "react-icons/pi";
 import { FaLinkedinIn } from "react-icons/fa";
 import { FaWhatsapp } from "react-icons/fa";
 import { FaFacebookF } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   return (
-    <Navbar expand="lg" className="header-nav ">
+    <Navbar expand="lg" className="header-nav fixed-top">
     <Container className='text-nowrap' >
         <Row className=' w-100 flex-row justify-content-between align-items-center'>
             <Col xs={2} md={2} sm={2} lg={2}><span  className='nav-logo px-2'>Logo</span></Col>
@@ -30,10 +31,10 @@ export default function Header() {
                 <span className='fa-cover rounded rounded-circle p-2'><FaWhatsapp /></span>
                 <span className='fa-cover rounded rounded-circle p-2'><FaFacebookF /></span>
             </div>
-          <span className='nav-link'>الاكاديمية</span>
-          <span className='nav-link'>الاخبار</span>
-          <span className='nav-link'>اللاعبين</span>
-          <span className='nav-link'>تواصل معنا</span>
+          <Link to="/" className='nav-link'>الاكاديمية</Link>
+          <Link to="/news" className='nav-link'>الاخبار</Link>
+          <Link to="/players" className='nav-link'>اللاعبين</Link>
+          <Link to="/contact" className='nav-link'>تواصل معنا</Link>
         </Nav>
       </Navbar.Collapse>
     </Container>

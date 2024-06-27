@@ -1,8 +1,8 @@
 import React from 'react';
 import {Container , Row , Col} from "react-bootstrap";
-import coach1 from "../assets/coaches-section/2.jpeg";
-import coach2 from "../assets/coaches-section/3.jpeg";
-import coach3 from "../assets/coaches-section/4.jpeg";
+import coach1 from "../../assets/coaches-section/2.jpeg";
+import coach2 from "../../assets/coaches-section/3.jpeg";
+import coach3 from "../../assets/coaches-section/4.jpeg";
 
 export default function CoachesSection() {
   return (
