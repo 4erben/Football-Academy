@@ -7,6 +7,7 @@ import { Container } from 'react-bootstrap';
 import HomePage from './Pages/HomePage';
 import { Route, Routes } from 'react-router-dom';
 import NewsPage from './Pages/NewsPage';
+import PlayersPage from './Pages/PlayersPage';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Routes>
           <Route path='/' element={<HomePage />} />
           <Route path='/news' element={<NewsPage />} />
+          <Route path='/players' element={<PlayersPage />} />
         </Routes>
         
       </Container>

@@ -1,7 +1,7 @@
 import React from 'react'
-import { Button, Card, Col, Container, Row } from 'react-bootstrap'
+import {Card, Col, Row } from 'react-bootstrap'
 
-export default function ({name,imgSrc,isYoung,age,description}) {
+export default function ({name,imgSrc,category,age,description}) {
   return (
     <Col lg={3} md={6} className='my-2'>
         <Card className='player-card'>
@@ -12,23 +12,23 @@ export default function ({name,imgSrc,isYoung,age,description}) {
             <Card.Body>
                 <Row className='pb-3'>
                     <Col className="col-6">
-                        <button className={`${isYoung? "btn-c-red": "btn-c-grey"} btn   rounded-pill`}>ناشي </button>
+                        <button className={`${category === "ناشئ"? "btn-c-red": "btn-c-grey"} btn   rounded-pill`}>ناشي </button>
                     </Col>
                     <Col className="col-6">
-                        <button className={`${!isYoung? " btn-c-red": "btn-c-grey"} btn  rounded-pill`}>محترف</button>
+                        <button className={`${category !== "ناشئ"? " btn-c-red": "btn-c-grey"} btn  rounded-pill`}>محترف</button>
                     </Col>
                 </Row>
                 <Row>
                     <div>
-                        <span>الاسم:</span>
+                        <span className='ms-1'>الاسم: </span>
                         <span>{name}</span>
                     </div>
                     <div>
-                        <span>العمر:</span>
+                        <span className='ms-1'>العمر:</span>
                         <span>{age}</span>
                     </div>
                     <div>
-                        <span>الوصف: </span>
+                        <span className='ms-1'>الوصف: </span>
                         <span>{description.substring(0,66) +"..."}</span>
                     </div>
                 </Row>
