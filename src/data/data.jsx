@@ -1,5 +1,9 @@
 import player from "../assets/newspage/academy-section/1.png"
-import amateurPlayer from "../assets/newspage/academy-section/2.png"
+import amateurPlayer from "../assets/newspage/academy-section/2.png";
+import i1 from "../assets/academypage/vids-section/1.jpeg";
+import i2 from "../assets/academypage/vids-section/2.jpeg";
+import i3 from "../assets/academypage/vids-section/3.jpeg";
+import i4 from "../assets/academypage/vids-section/4.jpeg";
 
 
 const players = [
@@ -14,7 +18,7 @@ const players = [
         joinDate: "20/7/2018"
     },
     {
-        imgSrc: player,
+        imgSrc: amateurPlayer,
         name: "محمد علي",
         age: 17,
         description: "محمد هو لاعب كرة قدم موهوب يتمتع بمهارات فنية عالية وسرعة كبيرة في الميدان",
@@ -24,7 +28,7 @@ const players = [
         joinDate: "10/8/2017"
     },
     {
-        imgSrc: player,
+        imgSrc: amateurPlayer,
         name: "خالد محمود",
         age: 18,
         description: "خالد هو لاعب دفاعي صلب يتميز بقدراته الدفاعية الرائعة وشجاعته في المواجهات الثنائية",
@@ -44,7 +48,7 @@ const players = [
         joinDate: "15/6/2018"
     },
     {
-        imgSrc: player,
+        imgSrc: amateurPlayer,
         name: "عمرو عبد الله",
         age: 17,
         description: "عمرو هو لاعب جناح سريع يتمتع بقدرة عالية على المراوغة واختراق دفاعات الخصم",
@@ -64,7 +68,7 @@ const players = [
         joinDate: "18/5/2016"
     },
     {
-        imgSrc: player,
+        imgSrc: amateurPlayer,
         name: "سعيد أحمد",
         age: 17,
         description: "سعيد هو لاعب وسط ميدان موهوب يتمتع بقدرات تمرير وتحكم رائعة",
@@ -84,7 +88,7 @@ const players = [
         joinDate: "9/11/2018"
     },
     {
-        imgSrc: player,
+        imgSrc: amateurPlayer,
         name: "عبد الرحمن خالد",
         age: 18,
         description: "عبد الرحمن هو مدافع قوي يتمتع بقدرات كبيرة في قطع الكرات والدفاع",
@@ -105,5 +109,56 @@ const players = [
     }
 ];
 
+const sessions = [
+    {
+        imgSrc: i1,
+        name: "سارة محمد",
+        age: 14,
+        description: "حصة تدريبية لتطوير المهارات الفردية و تعزيز السرعة و المرونة",
+        history: "15/6/2024",
+        price: 250  
+    },
+    {
+        imgSrc: i2,
+        name: "أحمد خالد",
+        age: 18,
+        description: "جلسة تدريبية لتقوية العضلات و التحمل البدني مع تمارين الكرة المتقدمة",
+        history: "10/6/2024",
+        price: 300  
+    },
+    {
+        imgSrc: i3,
+        name: "لينا حسن",
+        age: 12,
+        description: "حصة تدريبية للتوازن و التنسيق و تحسين المهارات الأساسية في الكرة",
+        history: "20/6/2024",
+        price: 150  
+    },
+    {
+        imgSrc: i4,
+        name: "عمر يوسف",
+        age: 17,
+        description: "جلسة تدريبية لتحسين التحكم بالكرة و الاستراتيجيات الهجومية",
+        history: "5/6/2024",
+        price: 220  
+    },
+    {
+        imgSrc: i4,
+        name: "عمر يوسف",
+        age: 17,
+        description: "جلسة تدريبية لتحسين التحكم بالكرة و الاستراتيجيات الهجومية",
+        history: "5/6/2024",
+        price: 220  
+    },
+    {
+        imgSrc: i4,
+        name: "عمر يوسف",
+        age: 17,
+        description: "جلسة تدريبية لتحسين التحكم بالكرة و الاستراتيجيات الهجومية",
+        history: "5/6/2024",
+        price: 220  
+    },
+];
 
-export default  players;
+    const data = { players , sessions};
+export default data;

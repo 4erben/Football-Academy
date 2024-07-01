@@ -1,9 +1,10 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
 import PlayerCard from '../smallComponents/PlayerCard';
-import players from "../../data/data.jsx";
+import data from "../../data/data.jsx";
 
 export default function AmateurSection() {
+    const {players} = data;
     const amateurPlayers = players.filter((p)=>{
         return p.category === "محترف"
     });

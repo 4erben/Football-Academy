@@ -1,34 +1,31 @@
 import React from 'react'
 import { Col, Container, Row } from 'react-bootstrap'
-import PlayerCard from '../smallComponents/PlayerCard';
+import players from "../../data/data.jsx";
+import VidCard from '../smallComponents/VidCard.jsx';
 import data from "../../data/data.jsx";
 
-export default function AcademySection() {
-    const {players} = data;
-    const youndPlayers = players.filter((p)=>{
-        return p.category === "ناشئ"
-    });
+export default function VidsSection() {
+    const {sessions} = data;
   return (
-    <Container className='py-5'>
+    <Container className='py-5 vids-section' fluid>
         <Row className='my-3 pt-5'>
             <h1 className='mb-3'>لاعبي الاكاديمية الاصاغر -18</h1>
             <small>تستطيع تصفح طرق واساليب الاكاديمية في الحصص التدريبية</small>
         </Row>
-        <Row>
-            {youndPlayers?.slice(0,4).map((p,i)=>{
+        <div className='vids-row'>
+           {sessions?.map((p,i)=>{
                 return(
-                    <PlayerCard 
+                    <VidCard 
                     key={i}
                     name={p.name}
                     imgSrc={p.imgSrc}
-                    category={p.category}
-                    age={p.age}
+                    price={p.price}
                     description={p.description}
+                    history = {p.history}
                     />
                 )
-            })}
-            
-        </Row>
+            })} 
+        </div>
         
     </Container>
   )

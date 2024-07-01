@@ -34,7 +34,7 @@ export default function Header() {
           <Link to="/" className='nav-link'>الاكاديمية</Link>
           <Link to="/news" className='nav-link'>الاخبار</Link>
           <Link to="/players" className='nav-link'>اللاعبين</Link>
-          {/* <Link to="/contact" className='nav-link'>تواصل معنا</Link> */}
+          <Link to="/academy" className='nav-link'>الاكاديمية</Link>
         </Nav>
       </Navbar.Collapse>
     </Container>
