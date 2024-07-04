@@ -9,8 +9,8 @@ export default function VidsSection() {
   return (
     <Container className='py-5 vids-section' fluid>
         <Row className='my-3 pt-5'>
-            <h1 className='mb-3'>لاعبي الاكاديمية الاصاغر -18</h1>
-            <small>تستطيع تصفح طرق واساليب الاكاديمية في الحصص التدريبية</small>
+            <h1 className='mb-3'>الحصص التدريبية لشهر جوان</h1>
+            <small>فرصة من ذهب لحظور حصص تدريبية جدا قيمة مع خيرة المدربين</small>
         </Row>
         <div className='vids-row'>
            {sessions?.map((p,i)=>{

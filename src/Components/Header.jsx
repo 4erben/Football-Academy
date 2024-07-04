@@ -31,10 +31,10 @@ export default function Header() {
                 <span className='fa-cover rounded rounded-circle p-2'><FaWhatsapp /></span>
                 <span className='fa-cover rounded rounded-circle p-2'><FaFacebookF /></span>
             </div>
-          <Link to="/" className='nav-link'>الاكاديمية</Link>
-          <Link to="/news" className='nav-link'>الاخبار</Link>
-          <Link to="/players" className='nav-link'>اللاعبين</Link>
-          <Link to="/academy" className='nav-link'>الاكاديمية</Link>
+          <Link to="/" className='nav-link'>الرئيسية</Link>
+          <Link to="/latestNews" className='nav-link'>اخر الاخبار</Link>
+          <Link to="/youngPlayers" className='nav-link'>اللاعبين الناشئين</Link>
+          <Link to="/AmateurPlayers" className='nav-link'>اللاعبين المحترفين</Link>
         </Nav>
       </Navbar.Collapse>
     </Container>

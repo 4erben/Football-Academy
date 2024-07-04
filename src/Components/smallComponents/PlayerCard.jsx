@@ -1,9 +1,14 @@
 import React from 'react'
 import {Card, Col, Row } from 'react-bootstrap'
+import { useNavigate } from 'react-router-dom'
 
-export default function ({name,imgSrc,category,age,description}) {
+export default function ({name,imgSrc,category,age,description ,player}) {
+    const navigate = useNavigate();
+    const handleClick = ()=>{
+        navigate("/details",{state:{player}})
+    }
   return (
-    <Col lg={3} md={6} className='my-2'>
+    <Col lg={3} md={6} className='my-2 cursor-pointer' onClick={handleClick}>
         <Card className='player-card'>
             <div className=' img-container d-flex justify-content-center p-2'>
             <Card.Img variant='top' src={imgSrc} alt='player' className='player-img ' />

@@ -37,6 +37,9 @@ body{
   margin: 0 !important;
 }
 /* Utility Classes */
+.cursor-pointer{
+  cursor: pointer !important;
+}
 .z-10{
   z-index: 10;
 }

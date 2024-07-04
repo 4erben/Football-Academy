@@ -8,6 +8,7 @@ import i4 from "../assets/academypage/vids-section/4.jpeg";
 
 const players = [
     {
+        id: 1,
         imgSrc: player,
         name: "ايمن مدور",
         age: 16,
@@ -18,6 +19,7 @@ const players = [
         joinDate: "20/7/2018"
     },
     {
+        id: 2,
         imgSrc: amateurPlayer,
         name: "محمد علي",
         age: 17,
@@ -28,6 +30,7 @@ const players = [
         joinDate: "10/8/2017"
     },
     {
+        id: 3,
         imgSrc: amateurPlayer,
         name: "خالد محمود",
         age: 18,
@@ -38,6 +41,7 @@ const players = [
         joinDate: "5/9/2016"
     },
     {
+        id: 4,
         imgSrc: player,
         name: "علي حسين",
         age: 16,
@@ -48,6 +52,7 @@ const players = [
         joinDate: "15/6/2018"
     },
     {
+        id: 5,
         imgSrc: amateurPlayer,
         name: "عمرو عبد الله",
         age: 17,
@@ -58,6 +63,7 @@ const players = [
         joinDate: "22/4/2017"
     },
     {
+        id: 6,
         imgSrc: player,
         name: "ياسر محمد",
         age: 18,
@@ -68,6 +74,7 @@ const players = [
         joinDate: "18/5/2016"
     },
     {
+        id: 7,
         imgSrc: amateurPlayer,
         name: "سعيد أحمد",
         age: 17,
@@ -78,6 +85,7 @@ const players = [
         joinDate: "12/4/2017"
     },
     {
+        id: 8,
         imgSrc: player,
         name: "محمود عبد الله",
         age: 16,
@@ -88,6 +96,7 @@ const players = [
         joinDate: "9/11/2018"
     },
     {
+        id: 9,
         imgSrc: amateurPlayer,
         name: "عبد الرحمن خالد",
         age: 18,
@@ -98,6 +107,7 @@ const players = [
         joinDate: "13/8/2016"
     },
     {
+        id: 10,
         imgSrc: player,
         name: "حسن يوسف",
         age: 17,
